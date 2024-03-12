@@ -1,5 +1,8 @@
-# Object file
-*.o
+**/__pycache__/
+**/.env
 
-# Ada Library Information
-*.ali
+.vscode
+.pytest_cache/
+
+*.json
+*.ipynb
