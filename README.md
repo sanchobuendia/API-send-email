@@ -42,15 +42,15 @@ from google.oauth2 import service_account
 from google.auth.transport.requests import AuthorizedSession
 
 SERVICE_FILENAME = 'apisendemail.json'
-AUDIENCE = '226884483962-hua4aeuoq65uacmgeimonrekho5hld28.apps.googleusercontent.com'
+AUDIENCE = '....apps.googleusercontent.com'
 
-url = 'https://apiemail-dot-ped-dev-308120.rj.r.appspot.com/api/sendemail' 
+url = 'https://...' 
 data = {
-    "email_user":"aureliano.paiva@grupofleury.com.br",
-    "destinatario": ["sanchobuendia@gmail.com", "aureliano.paiva@grupofleury.com.br"],
+    "email_user":"aureliano@outlook.com",
+    "destinatario": ["sanchobuendia@gmail.com"],
     "message": "Teste GCP",
     "subject": "Subject Appengine",
-    "secret_key": "dabsa5-fesnob-Qupqyc"
+    "secret_key": "password1234"
 }
 
 credentials = service_account.IDTokenCredentials.from_service_account_file(SERVICE_FILENAME, target_audience=AUDIENCE)
